@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pezinho"
+    tools:context="tcc.monitorycardio.com.monitorycardio.Activity.CadastroFilho"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/botaoProximaFilho"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:background="@color/colorAccent"
+        android:text="PRÓXIMA ETAPA"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoLimpar_filho" />
+
+    <EditText
+        android:id="@+id/texto_filho"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Nome do filho"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintBottom_toTopOf="@+id/texto_CPF_FIlho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <EditText
+        android:id="@+id/texto_CPF_FIlho"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="CPF"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintBottom_toTopOf="@+id/texto_data_filho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_filho" />
+
+    <EditText
+        android:id="@+id/texto_data_filho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Data de nascimento"
+        android:inputType="date"
+        android:textAlignment="textStart"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintBottom_toTopOf="@+id/botaoLimpar_filho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_CPF_FIlho" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:text="Cadastrar Filho"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintBottom_toTopOf="@+id/texto_filho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botaoSalvarFilho"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginStart="25dp"
+        android:background="@color/colorAccent"
+        android:text="Salvar Filho"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintBaseline_toBaselineOf="@+id/botaoLimpar_filho"
+        app:layout_constraintEnd_toStartOf="@+id/botaoLimpar_filho"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botaoLimpar_filho"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="79dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorAccent"
+        android:text="Limpar"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintBottom_toTopOf="@+id/botaoProximaFilho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botaoSalvarFilho"
+        app:layout_constraintTop_toBottomOf="@+id/texto_data_filho" />
+
+</android.support.constraint.ConstraintLayout>

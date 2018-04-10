@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1086697800326",
+    "firebase_url": "https://monitorycardio.firebaseio.com",
+    "project_id": "monitorycardio",
+    "storage_bucket": "monitorycardio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086697800326:android:21abd9f4e42f23b7",
+        "android_client_info": {
+          "package_name": "tcc.monitorycardio.com.monitorycardio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086697800326-6suire2vaancsot63u2h8su4m0hko1km.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tcc.monitorycardio.com.monitorycardio",
+            "certificate_hash": "2c156f7b8195cf27019e84894db099fa767f7a91"
+          }
+        },
+        {
+          "client_id": "1086697800326-7vtlmdneobr9ml4pknk1ti4ke33j4vfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIwGK__uRrVi6tMBNM1C8HdCGDtG0jPAE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086697800326-7vtlmdneobr9ml4pknk1ti4ke33j4vfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

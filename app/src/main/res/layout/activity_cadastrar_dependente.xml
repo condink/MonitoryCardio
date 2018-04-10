@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pezinho"
+    tools:context="tcc.monitorycardio.com.monitorycardio.Activity.CadastrarDependente"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:text="Cadastrar dependente"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/nomeDepend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="161dp"
+        android:ems="10"
+        android:hint="Nome do Dependente"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Liberar Filho:"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/dependenteSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senhaDepend" />
+
+    <Spinner
+        android:id="@+id/dependenteSpinner"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoAtivar_Depend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/senhaDepend" />
+
+    <Button
+        android:id="@+id/finalizarDepend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:background="@color/colorAccent"
+        android:text="Finalizar"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGrup_depend"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/escolherDepend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button9">
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        tools:layout_editor_absoluteX="78dp">
+
+
+        <RadioButton
+            android:id="@+id/radioSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sim" />
+
+        <RadioButton
+            android:id="@+id/radioNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Não" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/emailDepend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="E-mail do dependente"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeDepend" />
+
+    <EditText
+        android:id="@+id/senhaDepend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Digite a senha do dependente"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailDepend" />
+
+    <Button
+        android:id="@+id/escolherDepend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Esolher"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintBottom_toTopOf="@+id/nomeDepend"
+        app:layout_constraintStart_toStartOf="@+id/radioGrup_depend" />
+
+    <Button
+        android:id="@+id/limparDepend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Limpar"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintBottom_toTopOf="@+id/finalizarDepend"
+        app:layout_constraintEnd_toEndOf="@+id/finalizarDepend" />
+
+    <Button
+        android:id="@+id/botaoAtivar_Depend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:text="ativar"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintBottom_toTopOf="@+id/finalizarDepend"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pezinho"
+    tools:context="tcc.monitorycardio.com.monitorycardio.Activity.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="288dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/editText_senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoCadastrar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:lineSpacingExtra="12sp"
+        android:text="Não possui cadastro? Cadastre-se aqui. "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoLogar" />
+
+    <Button
+        android:id="@+id/botaoLogar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Logar"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:theme="@style/botaoPadrao"
+        app:layout_constraintBottom_toTopOf="@+id/textoCadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_senha" />
+
+
+    <EditText
+        android:id="@+id/editText_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/botaoLogar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+
+</android.support.constraint.ConstraintLayout>
